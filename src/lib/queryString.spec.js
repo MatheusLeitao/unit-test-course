@@ -1,4 +1,4 @@
-const { queryString, parseQueryString} = require("../../src/lib/queryString");
+import { queryString, parseQueryString } from "../../src/lib/queryString";
 
 describe("Object to query scring", () => {
   it("should create a valid querystring", () => {

@@ -5,14 +5,12 @@ const keyValueToString = ([key, val]) => {
   return `${key}=${val}`;
 };
 
-module.exports.queryString = (obj) =>
-  Object.entries(obj).map(keyValueToString).join("&");
+export function queryString(obj)  {   return Object.entries(obj).map(keyValueToString).join("&");   }
 
-module.exports.parseQueryString = (qs) =>
-  Object.fromEntries(
+export function parseQueryString(qs)  {   return Object.fromEntries(
     qs.split("&").map((item) => {
       let [key, val] = item.split("=");
       if (val.indexOf(",") !== -1) val = val.split(",");
       return [key, val];
     })
-  );
+  );   }

@@ -1,4 +1,4 @@
-module.exports.sum = (x, y) => {
+export function sum(x, y) {
     
     const firstNumber = parseInt(x);
     const secondNumber = parseInt(y);
@@ -8,4 +8,4 @@ module.exports.sum = (x, y) => {
     }
     
     return firstNumber + secondNumber;
-};
+}
