@@ -31,7 +31,7 @@ describe("Object to query scring", () => {
   });
 });
 
-describe.only('QueryString to Object', () => {
+describe('QueryString to Object', () => {
     it('should convert queryString to object', () => {
         const qs = 'name=John&profession=Developer'
         expect(parseQueryString(qs)).toEqual({ name: 'John', profession: 'Developer' });
