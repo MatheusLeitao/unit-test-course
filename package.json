@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "test:cov": "jest --coverage",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watchAll"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,11 @@
     "@babel/preset-env": "^7.16.11",
     "@types/jest": "^27.4.1",
     "babel-jest": "^28.0.1",
-    "jest": "^28.0.0"
+    "jest": "^28.0.0",
+    "ndb": "^1.1.5"
+  },
+  "dependencies": {
+    "dinero.js": "^1.9.1",
+    "lodash": "^4.17.21"
   }
 }
